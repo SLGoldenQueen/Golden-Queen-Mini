@@ -1,0 +1,103 @@
+{
+  "name": "GoldenQueen",
+  "description": "JavaScript WhatsApp bot made by Dushan. මෙය WhatsApp බොට් එකක් වන අතර auto read, typing, record, react වැනි විශේෂාංග සහිත වේ.",
+  "keywords": ["bot", "WhatsApp", "Baileys", "Dushan"],
+  "repository": "https://github.com/your-username/GoldenQueen", 
+  "success_url": "/",
+  "env": {
+    "SESSION_ID": {
+      "description": "ඔබගේ SESSION_ID මෙතැනට ඇතුළත් කරන්න.",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "ඔබගේ WhatsApp number එක (owner) මෙහි ඇතුළත් කරන්න. Eg: 947XXXXXXXX",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix එක (උදා: '.')",
+      "required": false,
+      "value": "."
+    },
+    "MODE": {
+      "description": "Bot mode එක තෝරන්න: public | private | self",
+      "required": false,
+      "value": "public"
+    },
+    "ALIVE_MSG": {
+      "description": "Bot .alive command එකට පෙන්විය යුතු message එක",
+      "required": false,
+      "value": "IAm Online Golden Queen Mini"
+    },
+    "ALIVE_IMG": {
+      "description": "Bot .alive image එකේ URL එක",
+      "required": false,
+      "value": "https://i.ibb.co/jP1LLWF8/8f46dca4f208.png"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Status auto read කිරීම (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_REACT": {
+      "description": "Message auto react කිරීම (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_REACT_STATUS": {
+      "description": "Status auto react කිරීම (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Bot එක හැමවිටම online පෙන්වන්න (true/false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_READ": {
+      "description": "Chats auto read (true/false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_RECORD": {
+      "description": "Voice record simulation (true/false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_TYPING": {
+      "description": "Typing simulation (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_RECORDING": {
+      "description": "Always recording status (true/false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_BLOCK": {
+      "description": "Unknown numbers auto block (true/false)",
+      "required": false,
+      "value": "false"
+    },
+    "ANTI_BAD": {
+      "description": "Group chats වල නරක වචන block කිරීම (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "ANTI_LINK": {
+      "description": "Group chats වල link blocker (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "RE": {
+      "description": "212 number auto block (true/false)",
+      "required": false,
+      "value": "true"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+  }
